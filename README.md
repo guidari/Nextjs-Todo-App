@@ -5,10 +5,11 @@ Fullstack Jamstack with Next.js
 This was an app developed while watching a course from Auth0.
 
 The tecnologies that were used in this project are:
-    - Nextjs
-    - Airtable
-    - Tailwind
-    - Auth0
+
+- Nextjs
+- Airtable
+- Tailwind
+- Auth0
 
 ## Getting Started
 
