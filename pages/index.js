@@ -17,7 +17,7 @@ export default function Home({initialTodos, user}) {
   }, []);
 
   return (
-    <div>
+    <div className="px-5">
       <Head>
         <title>Authenticated TODO App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -26,7 +26,8 @@ export default function Home({initialTodos, user}) {
       <main>
         {user && (
           <>
-            <h1 className="text-2xl text-center mb-4">Welcome, {user.nickname}</h1>
+            <hr/>
+            <h1 className="text-2xl text-center mb-4 my-5">Welcome, {user.nickname}</h1>
             <TodoForm/>
             <ul>
               {todos && 
@@ -41,7 +42,7 @@ export default function Home({initialTodos, user}) {
         {!user && 
           <>
             <div class="relative py-3 sm:max-w-xl sm:mx-auto my-10">
-              <div class="absolute bg-gradient-to-r from-blue-600 inset-0 shadow-lg transform sm:-rotate-6 sm:rounded-3xl"></div>
+              <div class="absolute bg-gradient-to-r from-blue-600 inset-0 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 rounded-3xl"></div>
               <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
               <p className="text-center my-3 font-medium">You should log in to save your TODOs</p>
               </div>
